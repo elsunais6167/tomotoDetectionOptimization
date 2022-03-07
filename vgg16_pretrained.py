@@ -20,8 +20,9 @@ from keras import backend as K
 import tensorflow as tf
 from scipy import misc
 
-img_dim_ordering = 'tf'
-K.set_image_dim_ordering(img_dim_ordering)
+K.set_image_data_format('channels_first')
+#img_dim_ordering = 'tf'
+#K.set_image_dim_ordering(img_dim_ordering)
 
 
 #####disable CUDA 
