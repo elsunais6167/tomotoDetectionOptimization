@@ -54,7 +54,7 @@ def pretrain_classifier_top ():
       layer.trainable = False
       
     #Set input format
-    keras_input = Input(shape=(224,224,3), name = 'image_input')
+    keras_input = Input(shape=(3,224,224), name = 'image_input')
     
     #new vgg16 model 
     output_vgg16_conv = model_vgg16(keras_input)
